@@ -9,6 +9,6 @@ const DataRouter = require("./Routes/data")
 
 app.use("/api",DataRouter)
 
-app.listen(5000,function () {
+app.listen(process.env.PORT||8080,function () {
     console.log('Application is Running')
 })
